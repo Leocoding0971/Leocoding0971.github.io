@@ -1,0 +1,3 @@
+I am a second-year master student in the School of Computer Science and Technology at Sun Yat-sen University, advised by Prof. Chao Yu. I received my B.Eng. degree from Huazhong University of Science and Technology (HUST).
+
+My research interests lie in multimodal large language models, computer vision, and multimodal reasoning. Currently, I focus on fine-tuning and enhancing multimodal large models for motion understanding and reasoning tasks, with particular interests in hallucination mitigation, physics-aware reasoning, and vision-language alignment. I am also interested in building reliable multimodal AI systems that bridge visual perception and structured physical knowledge for real-world applications.
