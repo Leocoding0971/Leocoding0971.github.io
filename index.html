@@ -197,10 +197,12 @@
                 </p>
                 <script type="text/javascript">
                   (function() {
-                    var now = new Date();
-                    var year = now.getFullYear();
-                    var month = String(now.getMonth() + 1).padStart(2, "0");
-                    var day = String(now.getDate()).padStart(2, "0");
+                    var modified = new Date(document.lastModified);
+                    if (isNaN(modified.getTime())) {
+                      return;
+                    }
+                    var year = modified.getFullYear();
+                    var day = String(modified.getDate()).padStart(2, "0");
                     var monthNames = [
                       "January",
                       "February",
@@ -215,7 +217,7 @@
                       "November",
                       "December"
                     ];
-                    var stamp = monthNames[now.getMonth()] + " " + day + ", " + year;
+                    var stamp = monthNames[modified.getMonth()] + " " + day + ", " + year;
                     var target = document.getElementById("last-updated");
                     if (target) {
                       target.textContent = stamp;
