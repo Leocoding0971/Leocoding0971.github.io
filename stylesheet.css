@@ -133,6 +133,71 @@ h2 {
   display: block;
 }
 
+.experience-list {
+  width: 100%;
+  border: 0;
+  border-spacing: 0 12px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.experience-list td {
+  padding: 0 16px;
+}
+
+.experience-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+}
+
+.experience-image {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.experience-details {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.experience-role {
+  line-height: 1.35;
+}
+
+.experience-company {
+  line-height: 1.35;
+}
+
+.experience-date {
+  color: #666;
+  line-height: 1.35;
+}
+
+@media (max-width: 600px) {
+  .experience-card {
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .experience-image {
+    width: 76px;
+    height: 76px;
+    flex-basis: 76px;
+  }
+}
+
 .fade {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
