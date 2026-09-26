@@ -214,3 +214,68 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.publications {
+  padding: 16px;
+}
+
+.publication {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 8px 0;
+}
+
+.publication-image {
+  position: relative;
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  flex: 0 0 220px;
+}
+
+.publication-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.publication-image .publication-image-hover {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: contain;
+  background: white;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.publication:hover .publication-image-hover,
+.publication:focus-within .publication-image-hover {
+  opacity: 1;
+}
+
+.publication-details {
+  min-width: 0;
+  line-height: 1.5;
+}
+
+.publication-details h3,
+.publication-details p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .publication {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .publication-image {
+    width: 280px;
+    flex-basis: auto;
+  }
+}

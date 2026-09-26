@@ -73,6 +73,22 @@
             </tr>
           </tbody></table>
 
+          <section class="publications" aria-labelledby="publications-heading">
+            <h2 id="publications-heading">Publications</h2>
+            <article class="publication">
+              <div class="publication-image">
+                <img src="myimage/halluc_architecture.png" alt="MotionHalluc framework overview">
+                <img class="publication-image-hover" src="myimage/halluc_cases.png" alt="MotionHalluc hallucination examples">
+              </div>
+              <div class="publication-details">
+                <h3 class="papertitle">MotionHalluc: Diagnosing Kinematic Hallucinations in Fine-Grained Motion Reasoning</h3>
+                <p class="publication-authors"><strong>Weile Guo</strong>, Shenghong He, Danying Mo, Chengdong Xu, Xuexun Liu, Chao Yu</p>
+                <p class="publication-venue"><em>NeurIPS 2026 ED Track</em> &mdash; Poster</p>
+                <p class="publication-links"><a href="https://arxiv.org/abs/2606.23061">[arXiv]</a></p>
+              </div>
+            </article>
+          </section>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
@@ -121,39 +137,7 @@
 </tr>
 
 
-<tr onmouseout="vbanana_stop()" onmouseover="vbanana_start()">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='vbanana_image'>
-        <img src='myimage/halluc_cases.png' width=100%>
-      </div>
-      <img src='myimage/halluc_architecture.png' width=100%>
-    </div>
-    <script type="text/javascript">
-      function vbanana_start() {
-        document.getElementById('vbanana_image').style.opacity = "1";
-      }
 
-      function vbanana_stop() {
-        document.getElementById('vbanana_image').style.opacity = "0";
-      }
-      vbanana_stop()
-    </script>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Fine-grained Motion Reasoning and Hallucination Mitigation for Multimodal Large Language Models</span>
-    <br>
-    <strong>Weile Guo.</strong>
-    <br>
-    <em>Manuscript in submission, 2026.04</em>
-    <br>
-    <a href="https://arxiv.org/abs/2606.23061">https://arxiv.org/abs/2606.23061</a>
-    <p></p>
-    <p>
-    This project focuses on reducing hallucinations in multimodal large language models for motion-related reasoning tasks. I built a benchmark from carefully aligned motion-capture videos and fine-grained question-answer pairs, and designed a training-free enhancement framework that converts video pixels into structured skeletal motion sequences. By guiding the model to reason over physics-aware motion cues, the system improves reasoning accuracy and makes multimodal output more reliable in real-world scenarios.
-    </p>
-  </td>
-</tr>
 
 
 <tr onmouseout="agentic_stop()" onmouseover="agentic_start()">
